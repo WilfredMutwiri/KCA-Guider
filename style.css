@@ -98,9 +98,13 @@ form input{
     #logo h2{
         font-size: 19px;
     }
+    #logoHolder{
+        margin-top: 50px;
+    }
     .loginHolder{
         width: 300px;
         height: auto;
+        margin-top: 50px;
     }
     #imgHolder img{
         width: 70px;
