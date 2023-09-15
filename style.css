@@ -89,6 +89,21 @@ form input{
 #login a:hover{
     color: rgb(252, 5, 5);
 }
+/* sign up page */
+.signHolder{
+    width: 100%;
+    background-color: rgb(138, 136, 136);
+    width: 400px;
+    height: auto;
+    margin: 0 auto;
+    padding: 25px;
+    margin-top:90px;
+    color: rgb(255, 255, 255);
+    font-size: 19px;
+    border-radius: 5px;
+    margin-bottom: 80px;
+}
+
 /* media queries for login page */
 @media(max-width:600px){
     #logo img{
