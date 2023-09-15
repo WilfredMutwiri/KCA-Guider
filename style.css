@@ -1,0 +1,109 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    background-color:rgb(235, 233, 233);
+}
+/* Logo Section */
+#logoHolder{
+    width: 100%;
+    height: 100px;
+}
+#logo img{
+    width: 90px;
+    object-fit: cover;
+    padding: 13px;
+    border-radius: 50%;
+}
+#logo h2{
+    margin-top: -50px;
+    margin-left: 80px;
+    font-size: 23px;
+}
+#logo span{
+    color: rgb(18, 79, 211);
+}
+/* Login section */
+.loginHolder{
+    width: 100%;
+    background-color: rgb(5, 5, 5);
+    width: 380px;
+    height: 430px;
+    margin: 0 auto;
+    padding: 25px;
+    margin-top:90px;
+    color: rgb(241, 236, 236);
+    font-size: 19px;
+    border-radius: 10px;
+}
+#imgHolder{
+    width: 100%;
+    height: 77px;
+    display: flex;
+    margin-top: -58px;
+}
+#imgHolder img{
+    width: 70px;
+    border-radius:50%;
+    margin: 0 auto;
+}
+form input{
+    width: 100%;
+    height: 30px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    border-radius: 9px;
+    padding: 10px;
+}
+#submit{
+    font-size: 16px;
+    justify-content: center;
+    height: 35px;
+    background-color:rgb(8, 64, 250);
+    color: rgb(253, 252, 252);
+    margin-bottom: 40px;
+}
+#login p{
+    font-size: 17px;
+}
+#login a{
+    color: rgb(49, 97, 255);
+    text-decoration: none;
+}
+#sup{
+    width: 100%;
+    margin-top: 20px;
+}
+#sup p{
+    font-size: 14px;
+    line-height: 12px;
+    text-align: center;
+    color: rgb(253, 5, 5);
+}
+#submit:hover{
+    background-color: rgb(252, 5, 5);
+}
+#login a:hover{
+    color: rgb(252, 5, 5);
+}
+/* media queries for login page */
+@media(max-width:600px){
+    #logo img{
+        width: 60px;
+        margin: 0 auto;
+    }
+    #logo h2{
+        font-size: 19px;
+    }
+    .loginHolder{
+        width: 250px;
+        height: auto;
+        margin-top: 40px;
+    }
+    #imgHolder img{
+        width: 70px;
+    }
+}
