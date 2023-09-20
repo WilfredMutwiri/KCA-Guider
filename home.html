@@ -3,6 +3,8 @@
     <head>
         <title>KCA Guider</title>
         <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <link rel="Stylesheet" type="text/css" href="style.css">
     </head>
     <body>
@@ -11,18 +13,24 @@
             <!-- this is the logo section -->
             <div id="homeLogoHolder">
                 <div id="Homelogo">
-                    <img src="images/Screenshot 2023-09-14 155010.png"><h2>KCA <span>Location</span> Guider</h2>
+                    <img src="images/Screenshot 2023-09-14 155010.png"><h2>KCA <span>Location</span> Guider</h2>    
+                </div>
+                <div id="menu">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                      </svg>
+                      
                 </div>
             </div>
             <div id="navBar">
                 <div id="navHolder">
                     <ul>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">About</a></li>
+                        <li><a href="#homeContainer">Home</a></li>
+                        <li><a href="#about">About</a></li>
                         <li><a href="#">Contacts</a></li>
                         <li><a href="#">Guide Me</a></li>
                         <li><a href="#">Testimonials</a></li>
-                        <li><a href="#">LogOut</a></li>
+                        <li><a href="#">Log Out</a></li>
                     </ul>
                 </div>
             </div>
@@ -35,6 +43,7 @@
                     <div id="homeHolder">
                     <div id="homeInfo">
                         <p>
+                            <p id="homeUser">Welcome!</p><br>
                             <strong>
                                 Are you new to KCA University and don't know where your class is stationed?
                                 Worry no more!</strong><br>
@@ -45,7 +54,7 @@
                         </p>
                         <div id="homeCTA">
                             <div>
-                                <button id="homeBTN1"><a href="#">Learn More</a></button>
+                                <button id="homeBTN1"><a href="#about">Learn More</a></button>
                             </div>
                             <div>
                                 <button id="homeBTN2"><a href="#">Start Guide</a></button>
@@ -58,6 +67,25 @@
                     </div>
                 </div>
             </section>
+            <section>
+                <div id="about">
+                    <h3>~ About KCA Location Guider ~</h3>
+                    <div id="aboutHolder">
+                    <div id="aboutImg">
+                        <img src="images/Screenshot 2023-09-18 165952.png">
+                    </div>
+                    <div id="aboutInfo">
+                        <p>
+                            <strong> KCA Location Guider</strong> is a navigation site tailored for students at KCA university. Its primary purpose is to assist students in finding their way around the school, making it particularly helpful for newcomers and those who are not familiar with the buiding layouts. The site offers step-by-step directions to classrooms, offices and other key locations within the school, ensuring students can navigate confidently and efficiently. With a clean and intuitive interface, this web application simplifies the school experience and helps students reach their destinations without hassle!
+                            <div>
+                                <button id="homeBTN2"><a href="#">Start Guide</a></button>
+                            </div>
+                        </p>
+                    </div>
+                    </div>
+                </div>
+            </section>
         </main>
     </body>
+    <script src="script.js"></script>
 </html>

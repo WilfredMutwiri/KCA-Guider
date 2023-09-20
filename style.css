@@ -1,11 +1,12 @@
-*{
+*,html{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: sans-serif;
+    scroll-behavior: smooth;
 }
 body{
-    background-color:rgb(235, 233, 233);
+    background-color:rgb(253, 250, 250);
 }
 /* Logo Section */
 #logoHolder{
@@ -21,12 +22,31 @@ body{
 #logo h2{
     margin-top: -50px;
     margin-left: 80px;
-    font-size: 23px;
+    font-size: 23rem;
 }
 #logo span{
     color: rgb(18, 79, 211);
 }
+#navReveal {
+    opacity: 0;
+    margin-left: 280px;
+    object-fit: cover;
+}
 /* Login section */
+#logo img{
+    width: 55px;
+    object-fit: cover;
+    padding: 12px;
+    border-radius: 50%;
+}
+#logo h2{
+    margin-top: -41px;
+    margin-left: 50px;
+    font-size: 20px;
+}
+#logo span{
+    color: rgb(18, 79, 211);
+}
 .loginHolder{
     width: 100%;
     background-color: rgb(5, 5, 5);
@@ -110,11 +130,11 @@ button:hover,#submit:hover{
 }
 /* home page */
 #headerHolder{
-    background-color:rgb(211, 211, 211);
-}
-#HomelogoHolder{
+    background-color:rgb(231, 230, 230);
+    height:10vh;
+    display: flex;
+    justify-content: space-between;
     width: 100%;
-    height: 100px;
 }
 #Homelogo img{
     width: 55px;
@@ -132,18 +152,16 @@ button:hover,#submit:hover{
 }
 #navBar{
     max-width: 100%;
-    margin-top: 10px;
     height: auto;
 }
 #navHolder{
     height: 60px;
-    max-width: 80%;
+    max-width: 100%;
     margin: 0 auto;
     padding: 20px;
 }
 #navHolder ul{
     display: flex;
-    justify-content: space-between;
 }
 li{
     list-style: none;
@@ -152,9 +170,14 @@ li a{
     color:rgb(0,0,0);
     text-decoration: none;
     font-size: 17px;
+    margin-left: 50px;
 }
 li a:hover{
     color: rgb(255, 0, 0);
+}
+#menu{
+    position: relative;
+    left: -400px;
 }
 /* home section */
 #homeContainer{
@@ -163,7 +186,7 @@ li a:hover{
     background-color: rgb(247, 244, 244);
 }
 #homeHolder{
-    max-width: 90%;
+    max-width: 93vw;
     padding-top: 80px;
     margin: 0 auto;
     background-color: rgb(247, 244, 244);
@@ -174,6 +197,10 @@ li a:hover{
 #homeHolder strong{
     font-size:40px;
     line-height: 49px;
+}
+#homeUser{
+    font-size:17px;
+    color: red;
 }
 #homeHolder em{
     font-size: 24px;
@@ -193,20 +220,63 @@ li a:hover{
 #homeBTN2{
     margin-left: 100px;
     width: 150px;
+    border: none;
 }
 #homeBTN1{
     width: 150px;
+    border: none;
 }
+#Homelogo hr{
+    opacity: 0;
+}
+/* about section */
+#about{
+    width: 100%;
+    height: auto;
+    background-color: rgb(244, 244, 244);
+    padding-bottom: 80px;
+    padding-top: 80px;
+}
+#about h3{
+    font-size: 22px;
+    line-height: 16px;
+    text-align: center;
+}
+#aboutHolder{
+    display: flex;
+    justify-content: space-evenly;
+    max-width: 90%;
+    margin:0 auto;
+    padding-top: 50px;
 
-
+}
+#aboutImg img{
+    width:auto;
+    object-fit: cover;
+    border-radius: 10px;
+}
+#aboutInfo p{
+    margin-left:50px;
+    line-height: 27px;
+    font-size: 17px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+#aboutInfo strong{
+    font-size: 18px;
+}
+#homeBTN2{
+    margin-left: 50px;
+    border: none;
+}
 /* media queries for login page */
-@media(max-width:600px){
+@media(max-width:720px){
     #logo img{
-        width: 60px;
+        width: 40px;
         margin: 0 auto;
     }
     #logo h2{
-        font-size: 19px;
+        font-size:12px;
     }
     #logoHolder{
         margin-top: 50px;
@@ -218,5 +288,83 @@ li a:hover{
     }
     #imgHolder img{
         width: 70px;
+    } 
+    /* media queries for navbar */
+    #headerHolder,#homeLogoHolder,#Homelogo{
+      width:100vw;
+      color: rgb(255, 255, 255);
+      background-color: rgb(17, 16, 16);
+      height:10vh;
+      display: block;
     }
+    #Homelogo{
+        width:100%;
+    }
+    #Homelogo h2{
+        font-size:1.4rem;
+    }
+    #homeLogoHolder{
+        display: flex;
+        justify-content: space-around;
+    }
+    #menu{
+        width: 40px;
+        margin-top:10px;
+        margin-right: 10px;
+        left: auto;
+    }
+    #navHolder ul{
+        flex-direction: column;
+        background-color: rgb(199, 199, 201);
+        padding: 20px;
+        margin-top: -20px;
+        position: relative;
+        /* left: -400px; */
+        z-index:0;
+    }
+    #navHolder ul.active{
+        z-index:1;
+    }
+    #navHolder ul li:hover{
+        background-color: rgb(156, 156, 156);
+    }
+    #navHolder a{
+        color: black;
+        margin-bottom: 20px;
+        line-height: 25px;
+    }
+    /* home media queries */
+    #homeHolder{
+        flex-wrap: wrap;
+        padding-left:20px;
+        padding-right: 10px;
+        font-size: 1rem;
+    }
+    #homeInfo{
+        margin-top: -40px;
+    }
+    #homeInfo strong{
+        font-size: 2.2rem;
+        line-height: 35px;
+        justify-content: center;
+    }
+    #homeInfo em{
+        font-size: 1.5rem;
+        line-height: 25px;
+        margin-top: 20px;
+    }
+    #homeContainer{
+        position: relative;
+    }
+    #aboutHolder{
+        flex-wrap: wrap;
+    }
+    #homeImg img,#aboutImg img{
+        width:340px;
+        object-fit: contain;
+    }
+    #homeCTA button{
+    margin:10px;
+    }
+
 }
